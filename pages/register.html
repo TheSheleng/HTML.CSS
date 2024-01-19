@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/icons/logo_2.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/css/register.css">
+    <title>Nike - Registration</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <!-- Topmost part of the page -->
+        <div class="usermenu row px-5 py-2 d-none d-md-flex">
+            <div class="col-5">
+                <img src="../resources/icons/logo_1.svg" alt="logo">
+            </div>
+
+            <button class="col-2 d-none d-lg-block">Skip to main content</button>
+    
+            <div class="menu col-5 offset-2 offset-lg-0 d-flex justify-content-end align-items-center gap-2">
+                <a href="#">Find a Store</a>
+                <span>|</span>
+                <a href="#">Help</a>
+                <span>|</span>
+                <a href="#">Join Us</a>
+                <span>|</span>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+
+        <!-- Main navigation -->
+        <nav class="navbar navbar-expand-lg row px-4">
+            <!-- Logo -->
+            <a class="navbar-brand mx-0 py-0 col-3" href="#">
+                <img src="../resources/icons/logo_2.svg" alt="logo">
+            </a>
+
+            <!-- Small menu -->
+            <div class="d-lg-none d-flex col-9 justify-content-end gap-4">
+                <form class="search d-none d-sm-flex" role="search">
+                    <button type="button">
+                        <img src="../resources/icons/Magnifier.svg" alt="search">
+                    </button>
+                    <input placeholder="Search" aria-label="Search">
+                </form>
+    
+                <div class="d-none d-sm-flex justify-content-between align-items-center gap-3">
+                    <a class="" href="#">
+                        <img src="../resources/icons/Favorites.svg" alt="favorites">
+                    </a>
+        
+                    <a class="" href="#">
+                        <img src="../resources/icons/Bag.svg" alt="bag">
+                    </a>
+                </div>
+    
+                <button class="p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navigation items -->
+            <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-around gap-3 m-auto">
+                    <li class="nav-item">
+                        <a class="item" aria-current="page" href="#">New & Featured</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="item" aria-current="page" href="#">Men</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="item" aria-current="page" href="#">Women</a>
+                    </li>
+                        
+                    <li class="nav-item">
+                        <a class="item" aria-current="page" href="#">Kids</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="item" aria-current="page" href="#">Sale</a>
+                    </li>
+                        
+                    <li class="nav-item">
+                        <a class="item" aria-current="page" href="#">SNKRS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Large menu -->
+            <form class="search col-2 d-none d-lg-flex" role="search">
+                <button type="button">
+                    <img src="../resources/icons/Magnifier.svg" alt="search">
+                </button>
+                <input placeholder="Search" aria-label="Search">
+            </form>
+
+            <div class="col-1 d-none d-lg-flex justify-content-between">
+                <a class="" href="#">
+                    <img src="../resources/icons/Favorites.svg" alt="favorites">
+                </a>
+    
+                <a class="" href="#">
+                    <img src="../resources/icons/Bag.svg" alt="bag">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex flex-column gap-3">
+        <!-- Registration form -->
+        <section class="register container">
+            <div class="text-center col-sm-9 col-lg-3 m-auto mb-4">
+                <img src="../resources/icons/logo_2.svg" alt="logo">
+
+                <h3 class="my-4">BECOME A NIKE MEMBER</h3>
+
+                <span>Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.</span>
+            </div>
+
+
+            <form action="#" class="col-sm-9 col-lg-3 m-auto gap-2 text-center">
+                <input type="text" placeholder="Email address">
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+
+                <label class="mb-4 w-100">
+                    <input type="text" class="mb-1" placeholder="Date of Birth">
+                    <span>Get a Nike Member Reward every year on your Birthday.</span>
+                </label>
+
+                <select>
+                    <option value="USA" selected>USA</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Japan">Japan</option>
+                    <option value="France">France</option>
+                    <option value="UK">UK</option>
+                    <option value="South Korea">South Korea</option>
+                </select>
+
+                <div class="row mb-4">
+                    <label class="nike_radio col-6">
+                        <input type="radio" name="gender" value="Male">
+                        <span class="w-100 d-block">Male</span>
+                    </label>
+                    <label class="nike_radio col-6">
+                        <input type="radio" name="gender" value="Female">
+                        <span class="w-100 d-block">Female</span>
+                    </label>
+                </div>
+
+                <label class="d-flex align-items-center">
+                    <input type="checkbox" class="m-0 me-3">
+                    <span class="w-100 d-block text-start">Sign up for emails to get updates from Nike on products, offers and your Member benefits</span>
+                </label>
+
+                <label>
+                    <span class="m-2 d-block">By creating an account, you agree to <a href="#">Nike's Privacy Policy</a> and <a href="#">Terms of Use</a>.</span>
+                </label>
+                
+                <button class="form-end-btn">JOIN US</button>
+            </form>
+
+            <div class="text-center my-4">
+                <span class="m-auto">Already a Member? <a href="#">Sign In</a>.</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="row mb-5 gap-sm-0 gap-5 text-sm-start text-center ">
+                        <!-- Find -->
+                        <div class="col-sm-4 d-flex flex-column gap-4">
+                            <a href="#">FIND A STORE</a>
+                            <a href="#">BECOME A MEMBER</a>
+                            <a href="#">SIGN UP FOR EMAIL</a>
+                            <a href="#">SEND US FEEDBACK</a>
+                            <a href="#">STUDENT DISCOUNTS</a>
+                        </div>
+        
+                        <!-- Get help -->
+                        <div class="col-sm-4 d-flex flex-column gap-3">
+                            <a href="#">GET HELP</a>
+                            <a href="#" class="link">Order Status</a>
+                            <a href="#" class="link">Delivery</a>
+                            <a href="#" class="link">Returns</a>
+                            <a href="#" class="link">Payment Options</a>
+                            <a href="#" class="link">Contact Us On Nike.com Inquiries</a>
+                            <a href="#" class="link">Contact Us On All Other Inquiries</a>
+                        </div>
+        
+                        <!-- About Nike -->
+                        <div class="col-sm-4 d-flex flex-column gap-3">
+                            <a href="#">ABOUT NIKE</a>
+                            <a href="#" class="link">News</a>
+                            <a href="#" class="link">Careers</a>
+                            <a href="#" class="link">Investors</a>
+                            <a href="#" class="link">Sustainability</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <!-- Social media -->
+                    <div class="social-media d-flex justify-content-md-end justify-content-around gap-3">
+                        <!-- Twitter -->
+                        <a href="#">
+                            <img src="../resources/icons/social_media/twitter.svg" alt="twitter">
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="#">
+                            <img src="../resources/icons/social_media/facebook.svg" alt="facebook">
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#">
+                            <img src="../resources/icons/social_media/youtube.svg" alt="youtube">
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#">
+                            <img src="../resources/icons/social_media/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3 px-2">
+                    <div class="d-flex justify-content-md-start justify-content-around gap-5 ">
+                        <!-- Locate -->
+                        <button type="button" class="d-flex gap-2 align-items-center">
+                            <img src="../resources/icons/locate.svg" alt="locate">
+                            <span>India</span>
+                        </button>
+    
+                        <!-- License -->
+                        <span>© 2023 Nike, Inc. All Rights Reserved</span>
+                    </div>
+                </div>
+
+                <!-- Subfutter -->
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-md-end justify-content-around gap-3">
+                        <a href="#" class="link">Guides</a>
+                        <a href="#" class="link">Terms of Sale</a>
+                        <a href="#" class="link">Terms of Use</a>
+                        <a href="#" class="link">Nike Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

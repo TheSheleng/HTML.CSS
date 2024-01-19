@@ -1,0 +1,67 @@
+@import "base.scss";
+
+header {
+    .usermenu {
+        background: $sc-color;
+
+        button {
+            font-size: 13px;
+            line-height: 26px;
+            background: $fr-color;
+            border: none;
+        }
+
+        .menu {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    nav {
+        font-size: 15px;
+        font-weight: bold;
+
+        .item {
+            color: $tx1-color;
+            position: relative;
+
+            &::after {
+                content: "";
+                transform: translateX(-50%); 
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                width: 0;
+                height: 2px;
+                background-color: $tx1-color;
+                transition: 0.2s;
+              }
+
+            &:hover::after {
+                width: calc(100% + 20px);
+            }
+        }
+
+        .search {
+            border-radius: 100px;
+            background: $sc-color;
+            padding: 0;
+            
+            button {
+                padding: 6px 8px;
+                border-radius: 100px;
+                margin: 2px;
+                transition: 0.2s;
+
+                &:hover {
+                    background: $th-color;
+                }
+            }
+
+            input {
+                width: 100%;
+                padding: 8px 24px 8px 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "base.scss";
+
+.black_button {
+    background: $tx1-color;
+    color: $fr-color;
+    padding: 10px 20px;
+    border-radius: 100px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.white_button {
+    background: $fr-color;
+    color: $tx1-color;
+    padding: 10px 20px;
+    border-radius: 100px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.round_button {
+    background: $th-color;
+    border-radius: 100px;
+    padding: 12px;
+    opacity: 0.5;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.nike_radio {
+    input[type="radio"] {
+        display: none;
+    }
+
+    span {
+        border: 1.5px solid $th-color;
+        border-radius: 2.5px;
+        height: 40px;
+        padding: 10px 12px;
+        font-size: 13px;
+
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked + span {
+        background: $th-color;
+    }
+}

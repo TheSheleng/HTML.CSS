@@ -1,0 +1,48 @@
+@import "header.scss";
+@import "footer.scss";
+@import "nike_styles.scss";
+
+.hello-app {
+    div {
+        background: $sc-color;
+
+        span {
+            a {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.best-of {
+    .carousel-inner {
+        >div >div >span {
+            color: $th-color;
+        }
+    }
+}
+
+.the-essentials {
+
+    .row {
+        div {
+            position: relative;
+
+            overflow: hidden; 
+
+            a {
+                position: absolute;
+                left: 30px;
+                bottom: 20px;
+            }
+
+        }
+    }
+}
+
+.link-list {
+    a {
+        color: $tx2-color;
+    }
+}

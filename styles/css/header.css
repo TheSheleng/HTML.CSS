@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "FreeSans";
+  src: url("./resources/fonts/FreeSans.ttf") format("Regular"), url("./resources/fonts/FreeSansBold.ttf") format("Bold"), url("./resources/fonts/FreeSansBoldOblique.ttf") format("BoldOblique"), url("./resources/fonts/FreeSansOblique.ttf") format("Oblique");
+}
+body {
+  font-family: "FreeSans", sans-serif;
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+span {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-weight: bold;
+    font-size: 56px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  span {
+    font-size: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+  }
+  select {
+    outline: none;
+  }
+}
+header .usermenu {
+  background: #F5F5F5;
+}
+header .usermenu button {
+  font-size: 13px;
+  line-height: 26px;
+  background: #fff;
+  border: none;
+}
+header .usermenu .menu {
+  font-size: 12px;
+  line-height: 18px;
+}
+header nav {
+  font-size: 15px;
+  font-weight: bold;
+}
+header nav .item {
+  color: #000;
+  position: relative;
+}
+header nav .item::after {
+  content: "";
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 0.2s;
+}
+header nav .item:hover::after {
+  width: calc(100% + 20px);
+}
+header nav .search {
+  border-radius: 100px;
+  background: #F5F5F5;
+  padding: 0;
+}
+header nav .search button {
+  padding: 6px 8px;
+  border-radius: 100px;
+  margin: 2px;
+  transition: 0.2s;
+}
+header nav .search button:hover {
+  background: #E5E5E5;
+}
+header nav .search input {
+  width: 100%;
+  padding: 8px 24px 8px 8px;
+}/*# sourceMappingURL=header.css.map */

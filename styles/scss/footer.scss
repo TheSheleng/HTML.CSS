@@ -1,0 +1,45 @@
+@import "base.scss";
+
+footer {
+    background: $rvfr-color;
+    font-size: 10px;
+
+    a {
+        color: $rvtx1-color;
+        font-size: 10px;
+    }
+
+    button {
+        color: $rvtx1-color;
+
+        span {
+            color: $rvtx1-color;
+            font-size: 12px;
+        }
+    }
+
+    span {
+        color: $rvsc-color;
+        font-size: 10px;
+    }
+
+    .link {
+        color: $rvsc-color;
+        transition: 0.2s;
+        
+        &:hover {
+            color: $rvtx1-color;
+        }
+    }
+
+    .social-media {
+        a {
+            opacity: 0.5;
+            transition: 0.2s;
+
+            &:hover {
+                opacity:1;
+            }
+        }
+    }
+}
